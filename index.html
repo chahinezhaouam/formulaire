@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Remarque : Le devoir est en français, il est préférable d'utiliser lang="fr". -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1> Formulaire d'Inscription</h1>
-    <form action="">
+    <form action=""> <!-- Remarque : Il serait préférable d'ajouter method="post" -->
         <div>
         <label>Nom :</label>
         <input type="text" placeholder="votre nom complet" required>
@@ -16,6 +16,7 @@
         <div>
          <label>Email :</label>
         <input type="text" placeholder="example@gmail.com" required>
+        <!-- Remarque : Utiliser type="email" pour le champ Email. -->
          </div>
 
          <div>   
@@ -46,18 +47,20 @@
         <div>
          <label>photo de profil :</label>
         <input type="file" placeholder="no file choosen" required>
+        <!-- Remarque : L'attribut placeholder n'est pas utilisé avec input type="file". -->
         </div>
 
         <div>
          <label>Genre :</label> <br>
         <input type="checkbox"> femme <br>
         <input type="checkbox"> homme
+        <!-- Remarque : Le genre doit être réalisé avec des boutons radio et non des cases à cocher. -->
         </div>
 
         <div>
          <label>Centres d'intérêt :</label> <br>
-        <input type="checkbox"  > Musique <br>
-        <input type="checkbox"  > Sport 
+        <input type="checkbox"> Musique <br>
+        <input type="checkbox"> Sport
         </div>
         
         <div>
@@ -72,26 +75,33 @@
         
 <p>Pourquoi vous inscrire ?</p>
 <textarea>expliquer ici</textarea>
+
     <div>
         <button type="submit">s'inscrire</button>
         <button type="submit">réinitialiser</button>
-        </div>
+        <!-- Remarque : Le bouton "Réinitialiser" doit être de type reset. -->
+    </div>
     </form>
+
     <h1>Image</h1>
     <figure>
         <img src="https://images.unsplash.com/photo-1782046641926-adcdb9dd2900?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNHx8fGVufDB8fHx8fA%3D%3D" alt="photo">
         <figcaption>photo de profil</figcaption>
     </figure>
+
     <h1>Audio</h1>
     <audio controls>
         <source src="/media/epic.mp3" type="audio/mpeg">
     </audio>
+
     <h2>Video MP4</h2>
     <video controls>
         <source src="https://media.istockphoto.com/id/1470824392/video/computer-code-scrolling.mp4?s=mp4-640x640-is&k=20&c=pOBdMCE7uwM-cRqd5oDHchx3EFVSzlzMQ8oyXg4uLsg=" type="video/mp4">
     </video>
+
     <h2>Liste des inscrits</h2>
     <table>
+        <!-- Remarque : Ajouter une bordure (border="1") ou du CSS pour améliorer la lisibilité du tableau. -->
         <thead>
             <tr>
                 <th>nom</th>
@@ -112,5 +122,12 @@
             </tr>
         </tbody>
     </table>
+    <!-- Remarque : Le formulaire fonctionne correctement, mais il serait plus lisible en utilisant des balises <br> pour les retours à la ligne et en ajoutant un peu d'espace entre les éléments. -->
+
+    <!-- Très bon travail ! 
+         Vous avez réalisé un formulaire complet et intégré les principaux éléments demandés (image, audio, vidéo et tableau).
+         Les remarques ci-dessus vous permettront d'améliorer davantage votre code et de respecter parfaitement les consignes du devoir.
+         Continuez vos efforts, vous êtes sur la bonne voie. Bon courage pour la suite !  -->
+
 </body>
 </html>
